@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/photo"
+            android:src="@color/black"
+            android:layout_marginRight="@dimen/standart_margin"
+            android:layout_marginLeft="@dimen/standart_margin"
+            android:layout_marginTop="@dimen/standart_margin"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/photo"
+            android:layout_alignTop="@id/photo"
+            android:text="ДР Лехи"
+            android:textColor="@color/black"
+            android:textSize="@dimen/btn_textSize"
+            android:id="@+id/header_text"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/photo"
+
+            android:layout_alignBottom="@id/photo"
+            android:text="20.10.18"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9 участников"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/header_text"
+            android:id="@+id/count_users"
+            android:layout_marginRight="@dimen/standart_margin"
+    />
+
+    <View android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="#ddd"
+    />
+
+</RelativeLayout>
